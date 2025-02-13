@@ -1,12 +1,17 @@
 @import "tailwindcss";
 @theme{
     --breakpoint-xs:410px;
-    --color-clr:#f54245;
-    
-     
 }
 @layer components{
     .custom-icon-hover{
-    @apply p-[0.41rem] border-r-[0.5px] box-border border-gray-400 hover:bg-gray-400 transition-all delay-4
-    }   
-}
+    @apply p-[0.41rem] border-r-[0.5px] box-border border-gray-400 hover:bg-gray-300 transition-all delay-4
+    cursor-pointer
+    }
+    .custom-nav{
+        @apply hover:bg-[#06b1ab] cursor-pointer p-3 
+        hover:text-black
+        hover:delay-75
+        }
+    }
+
+

@@ -2,29 +2,268 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haryana govt</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
+    <style>
+        body {
+            user-select: none;
+        }
 
+        #navlinkid span:active {
+            background-color: red;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <div
-        class="min-h-[2.1rem] border-b-1 text-[0.9rem] font-medium text-center items-center border-gray-400 bg-[#E2E1DC] flex justify-around  [@media(max-width:410px)]:block">
-        <div class="">
-            <span class="border-l-1 border-gray-400 custom-icon-hover">हरियाणा</span>
-            <span class="font-[100px] text-[0.8rem] custom-icon-hover ml-[-3.5px]">GOVERNMENT OF HARYANA</span>
+    <div>
+        <div
+            class="min-h-[2.1rem] border-b-1 text-[0.9rem] font-medium text-center items-center border-gray-400 bg-[#E2E1DC] flex justify-around box-border [@media(max-width:410px)]:block">
+            <div class="flex">
+                <span class="border-l-1 border-gray-400 custom-icon-hover">हरियाणा</span>
+                <span class="font-[100px] text-[0.8rem] custom-icon-hover ml-[-1.5px]">GOVERNMENT OF HARYANA</span>
+            </div>
+            <div
+                class="[@media(max-width:410px)]:block [@media(max-width:410px)]:items-center [@media(max-width:410px)]:mt-2 inline-flex min-h-[2.2rem]">
+                <span class="fa-duotone fa-solid fa-forward pt-3 custom-icon-hover border-l-[0.5px"
+                    title="Skip content"></span>
+                <span class="fa-solid fa-magnifying-glass custom-icon-hover pt-3" title="Search"></span>
+                <span class="fa-solid fa-sitemap custom-icon-hover pt-3" title="Site-map"></span>
+                <span class="fa-solid fa-language custom-icon-hover pt-3" title="Translate"></span>
+            </div>
         </div>
-        <div class="flex [@media(max-width:410px)]:block items-center mt-2">
-            <span class="fa-duotone fa-solid fa-forward custom-icon-hover border-l-[0.5px" title="Skip content"></span>
-            <span class="fa-solid fa-magnifying-glass custom-icon-hover" title="Search"></span>
-            <span class="fa-solid fa-sitemap custom-icon-hover" title="Site-map"></span>
-            <span class="fa-solid fa-language custom-icon-hover" title="Translate"></span>
+        <div class="min-h-40 justify-evenly flex items-center flex-wrap">
+            <div class="flex items-center justify-between [@media(max-width:441px)]:w-[100%]">
+                <div class="flex items-center">
+                    <img class="h-28" src="../image/hrlogo.png" alt="logo" title="haryan_govt" />
+                    <p class="pl-2">
+                        हरियाणा सरकार <br />
+                        Government of Haryana
+                    </p>
+                </div>
+                <span class="custom-nav hidden [@media(max-width:441px)]:flex" id="openSlider2">
+                    <i class="fa-solid fa-bars custom-nav"></i>
+                </span>
+            </div>
+
+            <div class="[@media(max-width:441px)]:hidden inline-flex justify-between flex-wrap space-x-8">
+                <img class="h-24 box-border" src="../image/itudelhi.png" alt="ituwtsa" title="new_delhi" />
+                <img class="h-24" src="../image/aazadi75.jpg" alt="75amrit" title="aazadi_amrit" />
+            </div>
+        </div>
+        <!-- navbar section -->
+        <div
+            class="flex bg-[#002244] text-white font-bold mx-auto justify-center flex-wrap space-x-2 [@media(max-width:441px)]:hidden">
+            <div id="navlinkid" class="inline-flex text-[0.9rem] tracking-tighter font-[poppins]] flex-wrap">
+                <span class="custom-nav">HOME</span>
+                <span class="custom-nav">ABOUT HARYANA
+                    <i class="fas fa-chevron-down ml-[1px]"></i>
+                </span>
+                <span class="custom-nav">GOVERNMENT
+                    <i class="fas fa-chevron-down ml-[1px]"></i>
+                </span>
+                <span class="custom-nav">CITIZENS
+                    <i class="fas fa-chevron-down ml-[1px]"></i>
+                </span>
+                <span class="custom-nav">BUSINESS
+                    <i class="fas fa-chevron-down ml-[1px]"></i>
+                </span>
+                <span class="custom-nav">EMPLOYEE'S SECTION
+                    <i class="fas fa-chevron-down ml-[1px]"></i>
+                </span>
+                <span class="custom-nav">ORGANIZATIONS
+                    <i class="fas fa-chevron-down ml-[1px]"></i>
+                </span>
+                <span class="custom-nav">DIRECTORY
+                    <i class="fas fa-chevron-down ml-[1px]"></i>
+                </span>
+                <span class="custom-nav">TOURISM
+                    <i class="fas fa-chevron-down ml-[1px]"></i>
+                </span>
+            </div>
+            <div class="inline-flex" id="openSlider">
+                <i class="fa-solid fa-bars custom-nav"></i>
+            </div>
+        </div>
+        <!-- right side slide part start -->
+        <!-- <div id="slidmake" class="h-screen absolute top-0 right-0 w-86 bg-red-800 hidden">
+        <p>right side slide active</p>
+      </div> -->
+        <!-- end -->
+        <marquee behavior="scroll" scrollamount="8" direction="left" class="pt-2 text-red-700">
+            <p>
+                यह वेबसाइट केवल शैक्षिक उद्देश्यों (Educational Purpose) के लिए बनाई गई है। यह हरियाणा सरकार की आधिकारिक
+                वेबसाइट का क्लोन है, लेकिन इसका किसी भी सरकारी संस्था या प्राधिकरण से कोई संबंध नहीं है। इस प्रोजेक्ट का
+                मुख्य उद्देश्य वेब डेवलपमेंट, UI/UX डिजाइन और फ्रंटएंड तकनीकों का अभ्यास करना है।
+
+                इस साइट पर मौजूद जानकारी, लोगो, चित्र और डिज़ाइन केवल डेमो के लिए हैं और इन्हें किसी भी आधिकारिक स्रोत
+                से मान्य नहीं किया जाना चाहिए। कृपया इसे वास्तविक सरकारी वेबसाइट न समझें और किसी भी आधिकारिक जानकारी के
+                लिए हरियाणा सरकार की आधिकारिक वेबसाइट पर जाएं।
+
+                यदि आपको सरकारी सेवाओं, नीतियों, योजनाओं, या अन्य किसी आधिकारिक सूचना की आवश्यकता हो, तो कृपया हरियाणा
+                सरकार की असली वेबसाइट या संबंधित विभागों के आधिकारिक पोर्टल पर जाएं।
+
+                यह प्रोजेक्ट केवल शिक्षा और सीखने के उद्देश्य से बनाया गया है, किसी भी प्रकार के गलत उपयोग के लिए डेवलपर
+                ज़िम्मेदार नहीं होगा।
+            </p>
+        </marquee>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black opacity-15 hidden"></div>
+    <!-- Right Side Slider -->
+
+    <div id="slider"
+        class="z-5 fixed top-0 right-0 w-64 h-full bg-[#002244] text-white shadow-lg transform translate-x-full transition-transform duration-300">
+        <div class="p-4 flex justify-between items-center">
+            <h2 class="text-lg font-semibold">Slide Menu</h2>
+            <button id="closeSlider"
+                class="text-white font-bold text-xl size-10 flex justify-center rounded-md hover:bg-[#06b1ab]">
+                &times;
+            </button>
+        </div>
+        <ul class="">
+            <li class="py-2 pl-4 border-b">
+                <a href="#" class="">Scheme <b>+</b></a>
+            </li>
+            <li class="py-2 pl-4 border-b">
+                <a href="#" class="">Notice <b>+</b></a>
+                <ul class="bg-[#001429] pl-6 pt-2 ml-[-16px]">
+                    <li class="">Events</li>
+                    <li class="pt-2">Announcemetns</li>
+                    <li class="pt-2">Recruitments</li>
+                    <li class="pt-2 pb-2">Tenders</li>
+                </ul>
+            </li>
+            <li class="py-2 pl-4 border-b">
+                <a href="#" class="">Documents <b>+</b></a>
+            </li>
+            <li class="py-2 pl-4">
+                <a href="#" class="">Media Gallery <b>+</b></a>
+            </li>
+        </ul>
+        <!-- paper slider -->
+    </div>
+    <div class="bg-gray-200 flex items-center justify-center min-h-2xl">
+        <div class="relative w-full mx-auto">
+            <!-- Carousel Container -->
+            <div class="overflow-hidden relative rounded-md">
+                <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+                    <div class="w-full flex-shrink-0">
+                        <img src="https://cdnbbsr.s3waas.gov.in/s37b7a53e239400a13bd6be6c91c4f6c4e/uploads/2024/12/20241204328937773.jpg"
+                            class="w-full">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img src="https://cdnbbsr.s3waas.gov.in/s37b7a53e239400a13bd6be6c91c4f6c4e/uploads/2020/05/2020050857.png"
+                            class="w-full">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img src="https://cdnbbsr.s3waas.gov.in/s37b7a53e239400a13bd6be6c91c4f6c4e/uploads/2020/05/2020050835.jpg"
+                            class="w-full">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img src="https://cdnbbsr.s3waas.gov.in/s37b7a53e239400a13bd6be6c91c4f6c4e/uploads/2020/05/2020050823.png"
+                            class="w-full">
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <img src="https://cdnbbsr.s3waas.gov.in/s37b7a53e239400a13bd6be6c91c4f6c4e/uploads/2020/05/2020050831.png"
+                            class="w-full">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Indicators -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button class="indicator w-3 h-3 bg-gray-800 rounded-full" data-slide="0"></button>
+                <button class="indicator w-3 h-3 bg-gray-400 rounded-full" data-slide="1"></button>
+                <button class="indicator w-3 h-3 bg-gray-400 rounded-full" data-slide="2"></button>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button id="prevBtn"
+                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full">
+                ❮
+            </button>
+            <button id="nextBtn"
+                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full">
+                ❯
+            </button>
         </div>
     </div>
+
+
+    <script>
+        let slider = document.getElementById("slider");
+        let overlay = document.getElementById("overlay");
+        let openBtn = document.getElementById("openSlider");
+        let openBtn2 = document.getElementById("openSlider2");
+        let closeBtn = document.getElementById("closeSlider");
+
+        // Function to open slider
+        function openSlider() {
+            slider.classList.remove("translate-x-full");
+            overlay.classList.remove("hidden");
+        }
+
+        // Function to close slider
+        function closeSlider() {
+            slider.classList.add("translate-x-full");
+            overlay.classList.add("hidden");
+        }
+
+        // Event Listeners
+        openBtn.addEventListener("click", openSlider);
+        openBtn2.addEventListener("click", openSlider);
+        closeBtn.addEventListener("click", closeSlider);
+        overlay.addEventListener("click", closeSlider);
+
+        // wallpaper carousel script 
+
+        const carousel = document.getElementById("carousel");
+        const indicators = document.querySelectorAll(".indicator");
+        const totalSlides = carousel.children.length;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle("bg-gray-800", index === currentIndex);
+                indicator.classList.toggle("bg-gray-400", index !== currentIndex);
+            });
+        }
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        indicators.forEach(indicator => {
+            indicator.addEventListener("click", (e) => {
+                currentIndex = parseInt(e.target.dataset.slide);
+                updateCarousel();
+            });
+        });
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        }, 3000);
+
+        // **Fix: Call `updateCarousel()` on page load**
+        updateCarousel();
+    </script>
 </body>
 
 </html>
